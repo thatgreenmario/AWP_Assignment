@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="myScript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class=  "filter">
+        
+        <button type="button" onclick="filter('fps')">FPS</button>
+        <button type="button" onclick="filter('rpg')">RPG</button>
+
+    </div>
+
+
+<div id="main">
+
+    <div class="fps" id= "fps" >
+            <img src="doom.jpg" height="200px" width="150" id="first" data-price=200 data-name="Doom">
+            <br>
+            <div class="price">
+                <strong>Name : Doom(2016)
+                    Price: 200
+                </strong>
+            </div>
+            <button type="button" onclick="addtocart(first)">Add to Cart</button>
+            <button type="button" onclick="details(first)">Details</button>
+
+    </div>
+    <div class="fps" id="tp">
+        <img src="re.jpg" height="200px" width="150" id="second" data-price=300 data-name="Resident Evil">
+        <br>
+        <div class="price">
+            <strong>Name : Resident Evil 2
+                Price: 300
+            </strong>
+        </div>
+        <button type="button" onclick="addtocart(second)">Add to Cart</button>
+        <button type="button" onclick="details(first)">Details</button>
+    </div>
+
+    <div class="rpg" id="tp">
+            <img src="ds3.jpg" height="200px" width="150" id="third" data-price=100 data-name="DarkSouls 3">
+            <br>
+            <div class="price">
+                <strong>Name : DarkSouls 3
+                    Price: 100
+                </strong>
+            </div>
+            <button type="button" onclick="addtocart(third)">Add to Cart</button>
+            <button type="button" onclick="details(first)">Details</button>
+        </div>
+
+        <div class="rpg" id="tp">
+            <img src="w3.jpg" height="200px" width="150" id="fourth" data-price=500 data-name="Witcher 3">
+            <br>
+            <div class="price">
+                <strong>Name : Witcher 3
+                    Price: 500
+                </strong>
+            </div>
+            <button type="button" onclick="addtocart(fourth)">Add to Cart</button>
+            <button type="button" onclick="details(first)">Details</button>
+        </div>
+</div>
+<div class="cart">
+    <table id="cart">
+    </table>
+</div>
+
+
+</body>
+
+</html>
